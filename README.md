@@ -1,48 +1,53 @@
 # GrandpAI
 
-GrandpAI is a fun online chatbot concept for parents dealing with overly helpful grandparents who have discovered ChatGPT and now send endless "helpful" advice.
+GrandpAI is a simple chatbot for grandparents to check a message before they send it to their kids.
 
-The tone is playful, sharp, and affectionate. The joke is not that grandparents care too much. The joke is that they now have industrial-scale confidence, instant formatting, and unlimited parenting suggestions.
+The idea is straightforward: paste in the text you are about to send, and GrandpAI tells you whether it sounds helpful, overbearing, guilt-inducing, too long, too frequent, or just plain annoying. Then it suggests a better version that is warmer, shorter, and more respectful.
 
 ## Premise
 
-GrandpAI imagines a grandparent-style AI assistant that delivers:
+GrandpAI helps grandparents answer two questions before they hit send:
 
-- unsolicited sleep tips
-- long-winded meal suggestions
-- suspiciously polished parenting advice
-- loving but relentless follow-ups
-- "just checking in" messages that are somehow 400 words long
+- is this message supportive or intrusive?
+- how can I say this in a less annoying way?
+
+Instead of encouraging more advice, the product acts like a gentle editor. It helps turn:
+
+- unsolicited parenting tips into supportive check-ins
+- long lectures into short texts
+- guilt trips into invitations
+- repeated follow-ups into patient silence
+- "just trying to help" messages into something their kids might actually want to read
 
 ## Product Direction
 
-This should feel like a comedy-first web experience, not a generic chatbot demo.
+This should feel like a fun, lightweight web app with a clear joke and a useful core interaction.
 
 Possible features:
 
-- a grandparent persona selector
-- one-click prompts like "Fix bedtime" or "Explain why socks are mandatory"
-- message rewrites in extra-helpful grandparent tone
-- escalating follow-up messages when the user ignores advice
-- a shareable conversation format for jokes and social posting
+- paste in a draft text message
+- get an "annoyingness" score with a short explanation
+- identify patterns like guilt, pressure, repetition, or advice overload
+- rewrite the message in a calmer, less invasive tone
+- offer alternatives like "send", "shorten", or "do not send"
 
 ## Brand Notes
 
 - Name: `GrandpAI`
-- Audience: parents, adult children, and anyone who has received aggressively helpful family advice
-- Voice: warm, meddling, confident, earnest, and slightly unhinged
+- Audience: grandparents who mean well, and families who know exactly how this dynamic works
+- Voice: affectionate, honest, lightly teasing, and useful
 
 ## First Build Goal
 
-Build a lightweight web app where the user can chat with a fictional AI grandparent persona and get comedic over-helpful responses.
+Build a lightweight web app where a grandparent can paste in a draft message and get fast feedback before sending it.
 
 Suggested first version:
 
-1. landing page with a strong comedic hook
-2. simple chat UI
-3. one default "grandparent" system prompt
-4. a few preset scenario buttons
-5. share/export conversation
+1. landing page with a clear comedic hook
+2. simple text box for drafting a message
+3. one-click analysis of tone and annoyance level
+4. rewritten version with less annoying phrasing
+5. simple verdict like "safe to send" or "maybe give them some space"
 
 ## Repo Status
 
