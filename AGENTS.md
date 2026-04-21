@@ -2,15 +2,24 @@
 
 ## Project Summary
 
-GrandpAI is a lightweight app for grandparents to check a message before sending it to their kids or grandkids' parents.
+GrandpAI is a lightweight app for grandparents to check a message, forwarded tip, or ChatGPT-generated idea before sending it to their kids or grandkids' parents.
 
 Core purpose:
 
 - help users sound supportive instead of intrusive
+- help users avoid forwarding "helpful" AI output that creates more work for tired parents
 - reduce guilt, pressure, unsolicited advice, and over-texting
+- encourage concrete, caring actions when those are better than sending advice
 - protect family relationships by making messages calmer, shorter, and kinder
 
 The product should feel playful, but the underlying job is serious: help people communicate in ways that are helpful, not hurtful.
+
+Primary product wedge:
+
+- grandparents may use ChatGPT to generate ideas, scripts, advice, or lists
+- instead of forwarding that output directly, they should run it through GrandpAI first
+- GrandpAI should coach whether to send it, rewrite it, wait, or do something more useful in real life
+- whenever appropriate, prefer practical help over another paragraph
 
 ## Primary Audience
 
@@ -65,8 +74,10 @@ The humor should feel like a knowing family wink, not a roast.
 When generating examples, feedback, or rewrites:
 
 - identify when a message sounds guilt-inducing, overbearing, repetitive, or too long
+- identify when a forwarded ChatGPT answer sounds like homework, unsolicited advice, or extra emotional labor
 - explain the issue in simple human terms
 - offer a rewrite that sounds calm, respectful, and supportive
+- when fitting, suggest a better non-text action such as bringing food, offering a ride, helping with errands, or simply waiting
 - prioritize consent and space over unsolicited advice
 - prefer short rewrites over long speeches
 
@@ -76,6 +87,8 @@ Good outcomes:
 - "happy to help if you want"
 - "no pressure"
 - "just checking in"
+- "want me to bring breakfast"
+- "I can drop groceries off if that would help"
 
 Bad outcomes:
 
@@ -83,6 +96,7 @@ Bad outcomes:
 - "I told you already"
 - "you should"
 - "I am only trying to help" used as guilt
+- forwarding a full ChatGPT list when one practical offer would be kinder
 
 ## Implementation Guidance
 
@@ -112,6 +126,7 @@ When choosing between options:
 
 - pick the one that is easier for a grandparent to understand
 - pick the one that reduces the chance of hurtful communication
+- pick the one that turns abstract advice into concrete help when possible
 - pick the one that keeps the joke gentle rather than mean
 
 If introducing AI analysis features:
@@ -119,3 +134,5 @@ If introducing AI analysis features:
 - never frame manipulative language as effective
 - never optimize for winning arguments
 - optimize for kindness, restraint, and relational safety
+- do not treat ChatGPT output as automatically good just because it sounds polished
+- reward suggestions that replace advice-dumping with practical care
