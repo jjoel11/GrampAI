@@ -26,37 +26,28 @@
     </header>
 
     <main class="auth-layout">
-      <section class="auth-intro">
-        <p class="eyebrow">A gentler way in</p>
-        <h1>Create your account before you create more family group-chat chaos.</h1>
-        <p class="hero-text">
-          GrandpAI helps you pause before sending advice, forwarding AI homework, or typing a paragraph
-          when a small practical offer would be kinder.
-        </p>
-        <ul class="hero-points" aria-label="Account page benefits">
-          <li>Big labels, roomy spacing, and clear next steps</li>
-          <li>Create an account in one place, then check messages with less fuss</li>
-          <li>Already a member? Ask for a sign-in link and carry on</li>
-        </ul>
-
-        <div class="auth-note-card">
-          <p class="card-badge">What GrandpAI is for</p>
-          <p class="auth-note-quote">
-            "Want me to bring soup?" usually lands better than a five-paragraph plan.
-          </p>
-          <p class="card-note">
-            The app is here to help your message sound caring, not crowded.
-          </p>
-        </div>
-      </section>
-
       <section class="auth-panel" aria-labelledby="auth-title">
         <div class="auth-panel-header">
-          <p class="section-tag">Account access</p>
-          <h2 id="auth-title">Start with a new account, or sign in if you already have one.</h2>
+          <p class="section-tag">Registration</p>
+          <h1 id="auth-title">Create your account.</h1>
           <p class="auth-panel-copy">
-            New users create an account below. Returning users can switch to a simple email sign-in link.
+            Fill in the four boxes below. If you already have an account, tap <strong>Sign in</strong> instead.
           </p>
+        </div>
+
+        <div class="auth-steps" aria-label="How this works">
+          <div class="auth-step">
+            <strong>1.</strong>
+            <span>Enter your name and email.</span>
+          </div>
+          <div class="auth-step">
+            <strong>2.</strong>
+            <span>Choose a password and type it again.</span>
+          </div>
+          <div class="auth-step">
+            <strong>3.</strong>
+            <span>Tap the big button at the bottom.</span>
+          </div>
         </div>
 
         <div class="auth-toggle" role="tablist" aria-label="Choose account action">
@@ -92,44 +83,44 @@
         >
           <div class="auth-context">
             <p class="auth-kicker">New here?</p>
-            <p>Create your GrandpAI account and keep your kindness checks in one place.</p>
+            <p>This is the easiest place to start.</p>
           </div>
 
           <form class="auth-form" novalidate>
             <label class="field">
               <span>Full name</span>
               <input type="text" name="fullName" autocomplete="name" placeholder="Patricia Walker">
-              <small class="field-hint">Required so we know what to call you.</small>
+              <small class="field-hint">Required.</small>
             </label>
 
             <label class="field">
               <span>Email address</span>
               <input type="email" name="email" autocomplete="email" placeholder="patricia@example.com">
-              <small class="field-hint">Use the email you want for your account and future sign-in links.</small>
+              <small class="field-hint">Required. Use the email you want to sign in with later.</small>
             </label>
 
             <div class="field-row">
               <label class="field">
                 <span>Password</span>
                 <input type="password" name="password" autocomplete="new-password" placeholder="Create a password">
-                <small class="field-hint">Required. Pick something you can remember without writing it on the fridge.</small>
+                <small class="field-hint">Required.</small>
               </label>
 
               <label class="field">
                 <span>Confirm password</span>
                 <input type="password" name="confirmPassword" autocomplete="new-password" placeholder="Type it again">
-                <small class="field-hint">Required. These should match before a real submit exists.</small>
+                <small class="field-hint">Required. It should match the password above.</small>
               </label>
             </div>
 
             <p class="validation-note" aria-live="polite">
-              Placeholder validation: make sure the email looks right and the passwords match.
+              Check that your email looks right and both password boxes match.
             </p>
 
             <button class="button button-primary auth-submit" type="button">Create account</button>
 
             <p class="privacy-note">
-              We keep the tone plain around here. No guilt, no spam, and no surprise family diplomacy lessons.
+              No spam. No scolding. Just a calmer place to check your messages.
             </p>
           </form>
         </section>
@@ -143,27 +134,45 @@
         >
           <div class="auth-context">
             <p class="auth-kicker">Already have an account?</p>
-            <p>Enter your email and GrandpAI will send a sign-in link when a real backend exists.</p>
+            <p>Enter your email and tap the button below.</p>
           </div>
 
           <form class="auth-form" novalidate>
             <label class="field">
               <span>Email address</span>
               <input type="email" name="signinEmail" autocomplete="email" placeholder="patricia@example.com">
-              <small class="field-hint">Use the same email you registered with.</small>
+              <small class="field-hint">Use the same email you used when you signed up.</small>
             </label>
 
             <p class="validation-note" aria-live="polite">
-              Placeholder validation: check that the email address is in a valid format before requesting a link.
+              Check that the email address looks right before asking for a link.
             </p>
 
             <button class="button button-primary auth-submit" type="button">Email me a sign-in link</button>
 
             <p class="magic-note">
-              You will not need a password in this sign-in flow. The email link will do the door-opening later.
+              You will not need a password here. The email link will handle sign-in later.
             </p>
           </form>
         </section>
+      </section>
+
+      <section class="auth-intro">
+        <p class="eyebrow">Why people use GrandpAI</p>
+        <h2>A little pause before a text turns into too much.</h2>
+        <p class="hero-text">
+          GrandpAI helps you send messages that feel supportive, short, and kind.
+        </p>
+
+        <div class="auth-note-card">
+          <p class="card-badge">Simple promise</p>
+          <p class="auth-note-quote">
+            "Want me to bring soup?" usually works better than a five-paragraph plan.
+          </p>
+          <p class="card-note">
+            If you want the fuller explanation first, <a class="inline-link" href="home.html">read about GrandpAI here</a>.
+          </p>
+        </div>
       </section>
     </main>
   </div>

@@ -448,7 +448,7 @@ textarea {
 
 .auth-layout {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
   gap: 28px;
   align-items: start;
 }
@@ -484,6 +484,7 @@ textarea {
   background: rgba(255, 252, 247, 0.86);
 }
 
+.auth-panel-header h1,
 .auth-panel-header h2 {
   margin-top: 10px;
 }
@@ -502,23 +503,50 @@ textarea {
   margin: 14px 0 0;
 }
 
+.auth-steps {
+  display: grid;
+  gap: 12px;
+  margin: 24px 0 22px;
+}
+
+.auth-step {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 243, 229, 0.82);
+  border: 1px solid rgba(216, 100, 63, 0.14);
+}
+
+.auth-step strong {
+  color: var(--accent-deep);
+  font-size: 1.1rem;
+}
+
+.auth-step span {
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
 .auth-toggle {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
-  margin: 28px 0 24px;
+  margin: 0 0 24px;
   padding: 10px;
   border-radius: 22px;
   background: rgba(241, 223, 200, 0.55);
 }
 
 .auth-toggle-button {
-  min-height: 58px;
+  min-height: 64px;
   border: 0;
   border-radius: 16px;
   background: transparent;
   color: var(--text);
-  font: inherit;
+  font-size: 1.08rem;
   font-weight: 700;
   cursor: pointer;
   transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
@@ -536,7 +564,7 @@ textarea {
 }
 
 .auth-form-section {
-  padding: 26px;
+  padding: 28px;
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, rgba(255, 251, 245, 0.9), rgba(255, 247, 237, 0.85));
   border: 1px solid rgba(94, 66, 44, 0.08);
@@ -561,7 +589,7 @@ textarea {
 
 .auth-form {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .field,
@@ -571,19 +599,20 @@ textarea {
 }
 
 .field span {
-  font-size: 1rem;
+  font-size: 1.08rem;
   font-weight: 700;
 }
 
 .field input {
   width: 100%;
-  min-height: 58px;
-  padding: 16px 18px;
+  min-height: 64px;
+  padding: 18px 20px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--surface-strong);
   color: var(--text);
   font: inherit;
+  font-size: 1.08rem;
 }
 
 .field input::placeholder {
@@ -606,7 +635,7 @@ textarea {
 }
 
 .validation-note {
-  padding: 14px 16px;
+  padding: 16px 18px;
   border-radius: 16px;
   background: rgba(255, 217, 191, 0.38);
   color: var(--accent-deep);
@@ -619,6 +648,13 @@ textarea {
 
 .auth-submit {
   width: 100%;
+  min-height: 66px;
+  font-size: 1.1rem;
+}
+
+.inline-link {
+  color: inherit;
+  font-weight: 700;
 }
 
 a:focus-visible,
@@ -670,6 +706,14 @@ input:focus-visible {
   .auth-panel {
     padding: 32px 26px;
   }
+
+  .auth-intro {
+    order: 2;
+  }
+
+  .auth-panel {
+    order: 1;
+  }
 }
 
 @media (max-width: 640px) {
@@ -685,6 +729,10 @@ input:focus-visible {
   .site-nav a,
   .button {
     width: 100%;
+  }
+
+  .auth-header {
+    gap: 14px;
   }
 
   .hero-copy,
@@ -732,5 +780,10 @@ input:focus-visible {
 
   .auth-toggle {
     grid-template-columns: 1fr;
+  }
+
+  .auth-step {
+    grid-template-columns: 28px 1fr;
+    padding: 12px 14px;
   }
 }
